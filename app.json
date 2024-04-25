@@ -1,19 +1,23 @@
 {
   "expo": {
-    "name": "shopping-cart",
+    "name": "Cart",
     "slug": "shopping-cart",
+    "description": "This is an app for calculating the price of items in your shopping cart",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/cart.png",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/15a7abc0-c44b-4c14-b0d3-f96e5e075cf5"
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +25,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.manu97.shoppingcart"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "metroConfig": "./metro.config.js"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "15a7abc0-c44b-4c14-b0d3-f96e5e075cf5"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
